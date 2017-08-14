@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Swift-4.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ViewControllers/ViewControllers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Popovers/Popovers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Notifications/Notifications.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Listeners.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Singletons.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Document/Document.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CodeConstraints/CodeConstraints.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomCollectionView/CustomCollectionView.xcodeproj">
+   </FileRef>
+   
+   <FileRef
+      location = "group:ScrollViews/ScrollViews.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ScrollingPages/ScrollingPages.xcodeproj">
+   </FileRef>
+   
+   <FileRef
+      location = "group:DragAndDrop/DragAndDrop.xcodeproj">
+   </FileRef>
+</Workspace>

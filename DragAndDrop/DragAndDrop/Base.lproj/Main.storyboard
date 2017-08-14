@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drag And Drop View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DragAndDropViewController" customModule="DragAndDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3O7-sw-6RU" userLabel="Drag View">
+                                <rect key="frame" x="67" y="39" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag text out of me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsk-B9-Z9T">
+                                        <rect key="frame" x="44" y="54" width="153" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Bsk-B9-Z9T" firstAttribute="centerX" secondItem="3O7-sw-6RU" secondAttribute="centerX" id="pQu-At-Jbb"/>
+                                    <constraint firstAttribute="height" constant="128" id="wW7-I3-wPj"/>
+                                    <constraint firstItem="Bsk-B9-Z9T" firstAttribute="centerY" secondItem="3O7-sw-6RU" secondAttribute="centerY" id="xmH-dc-rLt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GA5-8f-4cD" userLabel="Drop View">
+                                <rect key="frame" x="67" y="175" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop text on me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-7a-lRV">
+                                        <rect key="frame" x="8" y="8" width="224" height="112"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gtC-7a-lRV" secondAttribute="trailing" constant="8" id="WaI-3k-Xqa"/>
+                                    <constraint firstAttribute="bottom" secondItem="gtC-7a-lRV" secondAttribute="bottom" constant="8" id="Ypj-pM-LKN"/>
+                                    <constraint firstItem="gtC-7a-lRV" firstAttribute="top" secondItem="GA5-8f-4cD" secondAttribute="top" constant="8" id="ae4-Kq-ElT"/>
+                                    <constraint firstAttribute="height" constant="128" id="ivY-tc-ChO"/>
+                                    <constraint firstItem="gtC-7a-lRV" firstAttribute="leading" secondItem="GA5-8f-4cD" secondAttribute="leading" constant="8" id="yiZ-Eo-1aW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3O7-sw-6RU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="EIw-nz-Qlf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3O7-sw-6RU" secondAttribute="trailing" constant="68" id="SnY-xB-sbm"/>
+                            <constraint firstItem="GA5-8f-4cD" firstAttribute="top" secondItem="3O7-sw-6RU" secondAttribute="bottom" constant="8" id="Vo3-d6-4pM"/>
+                            <constraint firstItem="GA5-8f-4cD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="jU0-qd-2zj"/>
+                            <constraint firstItem="3O7-sw-6RU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="rVx-TB-ifB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GA5-8f-4cD" secondAttribute="trailing" constant="68" id="s9t-EB-N5s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dragView" destination="3O7-sw-6RU" id="9aL-Bh-zsv"/>
+                        <outlet property="dropResultLabel" destination="gtC-7a-lRV" id="Xr6-JA-NoA"/>
+                        <outlet property="dropView" destination="GA5-8f-4cD" id="mda-uS-Ue5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
