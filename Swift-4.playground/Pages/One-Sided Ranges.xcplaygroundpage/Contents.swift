@@ -1,12 +1,12 @@
 //: [Previous](@previous)
-
-import Foundation
-
 //: # One-sided ranges
+import Foundation
 
 // We can now represent a range that's infinite on one side
 var fromOneToInfinity = 1...
 var upToTwenty = ...20
+
+var message = "Hello, everyone!"
 
 //: Let's print each character, with a number before each one!
 

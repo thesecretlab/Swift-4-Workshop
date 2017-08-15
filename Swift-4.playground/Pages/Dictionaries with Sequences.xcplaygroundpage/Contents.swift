@@ -1,9 +1,20 @@
-
-
-
-
-
+//: [Previous](@previous)
 //: # Dictionaries with sequences
+
+import Foundation
+
+var intro = """
+Space: the final frontier.
+
+These are the voyages of the starship Enterprise.
+
+Its five-year mission:
+to explore strange new worlds,
+to seek out new life and new civilizations,
+to boldly go where no man has gone before.
+"""
+
+
 
 // Split apart the string by spaces and newlines, resulting in an array
 // of words
@@ -44,3 +55,4 @@ let popularWords = wordCount
 
 // = ["NEW", "THE", "TO", ""]
 
+//: [Next](@next)
