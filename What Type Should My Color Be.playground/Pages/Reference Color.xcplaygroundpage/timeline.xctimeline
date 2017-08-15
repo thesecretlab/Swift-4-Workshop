@@ -3,12 +3,17 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/desplesda/Work/Swift-Workshop/Enums.playground/Pages/Reference%20Color.xcplaygroundpage#CharacterRangeLen=14&amp;CharacterRangeLoc=290&amp;EndingColumnNumber=16&amp;EndingLineNumber=10&amp;StartingColumnNumber=2&amp;StartingLineNumber=10&amp;Timestamp=524457646.094964"
+         documentLocation = "file:///Users/desplesda/Work/Swift-Workshop/What%20Type%20Should%20My%20Color%20Be.playground/Pages/Reference%20Color.xcplaygroundpage#CharacterRangeLen=14&amp;CharacterRangeLoc=290&amp;EndingColumnNumber=16&amp;EndingLineNumber=10&amp;StartingColumnNumber=2&amp;StartingLineNumber=10&amp;Timestamp=524466176.064719"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/desplesda/Work/Swift-Workshop/Enums.playground/Pages/Reference%20Color.xcplaygroundpage#CharacterRangeLen=14&amp;CharacterRangeLoc=294&amp;EndingColumnNumber=20&amp;EndingLineNumber=10&amp;StartingColumnNumber=6&amp;StartingLineNumber=10&amp;Timestamp=524457646.095281"
+         documentLocation = "file:///Users/desplesda/Work/Swift-Workshop/What%20Type%20Should%20My%20Color%20Be.playground/Pages/Reference%20Color.xcplaygroundpage#CharacterRangeLen=14&amp;CharacterRangeLoc=294&amp;EndingColumnNumber=20&amp;EndingLineNumber=10&amp;StartingColumnNumber=6&amp;StartingLineNumber=10&amp;Timestamp=524466176.064949"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/desplesda/Work/Swift-Workshop/What%20Type%20Should%20My%20Color%20Be.playground/Pages/Reference%20Color.xcplaygroundpage#CharacterRangeLen=14&amp;CharacterRangeLoc=293&amp;EndingColumnNumber=19&amp;EndingLineNumber=10&amp;StartingColumnNumber=5&amp;StartingLineNumber=10&amp;Timestamp=524466176.06513"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

@@ -14,14 +14,16 @@ Let's create an integer that encodes this colour.*/
 // red = 209, green = 226, blue = 49
 let pear = 0xd1e231
 //: To extract the colour values from this, we have to do bit-shifting.
+//:
+//: We do this by doing a logical AND operation on the number that knocks out all bits besides the ones we care about, and then shift the result rightwards so that the bits are within the range of 0 to 255.
 let pearRed = (pear & 0xff0000) >> 16 // = 209
 let pearGreen = (pear & 0x00ff00) >> 8 // = 226
 let pearBlue = (pear & 0x0000ff) >> 0 // = 49
-//: To encode the values, we have to bitshift in the opposite direction.
+//: To encode the values, we have to bit-shift in the opposite direction, and then use the logical OR operation to combine them together.
 func coloursToHex(red: UInt8, green: UInt8, blue: UInt8) -> UInt32 {
-    return UInt32(red) << 16
-        | UInt32(green) << 8
-        | UInt32(blue)
+    return UInt32(red)  << 16
+         | UInt32(green) <<  8
+         | UInt32(blue)
 }
 
 let encodedPear = coloursToHex(red: 209, green: 226, blue: 49)

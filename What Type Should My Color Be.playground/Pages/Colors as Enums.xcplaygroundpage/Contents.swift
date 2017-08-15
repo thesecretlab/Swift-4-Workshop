@@ -1,3 +1,5 @@
+import Foundation
+
 //: [Previous](@previous)
 //:
 //: # Colors as Enums
@@ -12,17 +14,13 @@
 //: * As hue-saturation-value triplets: hsv(66, 78, 89)
 //:
 //: Wouldn't it be nicer if we had one type to represent all this?
-
-// red = 209, green = 226, blue = 49
-
-import Foundation
-
+//:
 //: An enumeration can be used for all of these representations, and all in the same type!
-
 enum Color {
     
-    // A name for colours. By associating this enum with String,
-    // Swift will automatically associate each value with a string.
+    // A name for colours. This type is embedded into the parent `Color` type.
+    // By associating this enum with String, Swift will automatically associate
+    // each value with a string.
     enum Name : String {
         case red , green, blue, grey, chartreuse
     }
@@ -39,10 +37,8 @@ enum Color {
     // A color expressed with a hex integer
     case hex(value: UInt32)
 }
-
-//: We can create different kinds of colors using different
+//: We can create colors with different representations by using different cases in the enumeration.
 let pear = Color.rgb(red: 209, green: 226, blue: 49)
-
 //: We use the `switch` statement to access it.
 
 switch pear {
@@ -62,7 +58,6 @@ if case .rgb(let r, _, _) = pear {
 //: Note: `guard case` works similarly.
 //:
 //: We can also customise how this type represents itself as a string, by conforming to the `CustomStringConvertible` protocol.
-
 extension Color: CustomStringConvertible {
     var description: String {
         switch self {
@@ -79,28 +74,23 @@ extension Color: CustomStringConvertible {
     
 }
 
-Color.named(name: .grey)
-Color.hex(value: 0xff0000)
-
+Color.named(name: .grey).description // = "grey"
+Color.hex(value: 0xff0000).description // = "#ff0000"
 //: Finally, let's take this all back to where we started. We can tell the Swift language that it's possible to directly convert an integer literal into our `Color` type, by conforming to the `ExpressibleByIntegerLiteral` protocol.
-
 extension Color : ExpressibleByIntegerLiteral {
     
     init(integerLiteral value: Int32) {
         
-        // Bit-shift each component and reduce it to a UInt8
-        let red = UInt8(value >> 16 & 0x0000ff)
-        let green = UInt8(value >> 8 & 0x0000ff)
-        let blue = UInt8(value & 0x0000ff)
+        // Bit-shift each component and reduce them to a UInt8
+        let r = UInt8(value >> 16 & 0x0000ff)
+        let g = UInt8(value >>  8 & 0x0000ff)
+        let b = UInt8(value >>  0 & 0x0000ff)
         
         // Produce a new RGB color from these components
-        self = .rgb(red: red, green: green, blue: blue)
+        self = .rgb(red: r, green: g, blue: b)
     }
     
 }
-
 //: We can now directly convert from hex colors (actually, any integer)
-
 let pearTheSequel : Color = 0xD1E231
-
 //: [Next](@next)
