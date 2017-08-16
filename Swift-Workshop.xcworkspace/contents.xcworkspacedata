@@ -23,19 +23,20 @@
       location = "group:Document/Document.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:What Type Should My Color Be.playground">
+   </FileRef>
+   <FileRef
       location = "group:CodeConstraints/CodeConstraints.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CustomCollectionView/CustomCollectionView.xcodeproj">
    </FileRef>
-   
    <FileRef
       location = "group:ScrollViews/ScrollViews.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ScrollingPages/ScrollingPages.xcodeproj">
    </FileRef>
-   
    <FileRef
       location = "group:DragAndDrop/DragAndDrop.xcodeproj">
    </FileRef>

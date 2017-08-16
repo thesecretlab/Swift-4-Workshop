@@ -38,6 +38,7 @@ enum Color {
     case hex(value: UInt32)
 }
 //: We can create colors with different representations by using different cases in the enumeration.
+let pearNamed = Color.named(name: .chartreuse)
 let pear = Color.rgb(red: 209, green: 226, blue: 49)
 //: We use the `switch` statement to access it.
 

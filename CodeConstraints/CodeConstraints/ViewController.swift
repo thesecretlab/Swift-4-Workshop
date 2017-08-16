@@ -56,8 +56,5 @@ class ViewController: UIViewController {
         label.firstBaselineAnchor.constraint(equalTo: topHalfView.centerYAnchor).isActive = true
         
     }
-
-
-
 }
 
